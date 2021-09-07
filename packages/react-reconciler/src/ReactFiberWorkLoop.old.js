@@ -1138,9 +1138,9 @@ export function flushSyncWithoutWarningIfAlreadyRendering(fn) {
 
 // Overload the definition to the two valid signatures.
 // Warning, this opts-out of checking the function body.
-declare function flushSync<R>(fn: () => R): R;
+// declare function flushSync<R>(fn: () => R): R;
 // eslint-disable-next-line no-redeclare
-declare function flushSync(): void;
+// declare function flushSync(): void;
 // eslint-disable-next-line no-redeclare
 export function flushSync(fn) {
   if (__DEV__) {

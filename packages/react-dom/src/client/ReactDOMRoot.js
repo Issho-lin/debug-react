@@ -97,6 +97,7 @@ ReactDOMRoot.prototype.render = function(children: ReactNodeList): void {
     }
   }
   updateContainer(children, root, null, null);
+  console.log('root0000', root.current); //sy-log
 };
 
 ReactDOMRoot.prototype.unmount = function(): void {
